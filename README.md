@@ -1,19 +1,51 @@
-# Data Alchemist
+# 🧪 Data Alchemist - AI-Powered Resource Allocation Configurator
 
-AI-powered CSV/Excel data processor with validation, rule creation, and natural language search.
+> Transform messy spreadsheets into clean, validated data with AI-powered insights and intelligent rule creation.
 
-## Features
+## 🚀 **Live Demo**
+- **Deployed Application**: https://data-alchemist-phi.vercel.app/
+- **GitHub Repository**: https://github.com/Harshtr8/data-alchemist
+- **Demo Video**: https://youtu.be/2RxWbogi9UM
 
-- **Data Upload**: CSV/XLSX file processing for clients, workers, and tasks
-- **Real-time Validation**: 12+ validation rules with error detection
-- **AI Search**: Natural language data queries
-- **Rule Builder**: Create business rules manually or with AI
-- **Priority System**: Configure allocation weights
-- **Export**: Clean data and rules configuration
+## 📋 **Assignment Completion**
 
-## Quick Start
+### ✅ **Milestone 1 - COMPLETED**
+- **Data Ingestion**: CSV/XLSX upload for clients, workers, tasks
+- **AI-Enhanced Parsing**: Smart column mapping and data type detection
+- **Validation System**: 12+ comprehensive validation rules
+- **Real-time Feedback**: Immediate validation on data changes
+- **Natural Language Search**: AI-powered data retrieval
 
+### ✅ **Milestone 2 - COMPLETED**
+- **Rule Builder UI**: 6 rule types with intuitive interface
+- **AI Rule Generation**: Natural language to rules conversion
+- **Prioritization System**: Weight-based criteria configuration
+- **Export Functionality**: Clean data + rules.json export
+
+### ✅ **Milestone 3 - COMPLETED (Stretch Goals)**
+- **AI Error Correction**: Smart suggestions with auto-fix capability
+- **Rule Recommendations**: Pattern-based rule suggestions
+- **Advanced Validation**: AI-powered quality checks
+
+## 🛠 **Tech Stack**
+- **Frontend**: Next.js 14, TypeScript, Tailwind CSS
+- **UI Components**: shadcn/ui
+- **State Management**: React Context + useReducer
+- **File Processing**: Custom CSV/XLSX parsers
+- **AI Features**: Simulated AI processing with realistic workflows
+
+## 🚀 **Quick Start**
+
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
 \`\`\`bash
+# Clone the repository
+git clone [your-repo-url]
+cd data-alchemist
+
 # Install dependencies
 npm install
 
@@ -23,38 +55,130 @@ npm run dev
 # Open http://localhost:3000
 \`\`\`
 
-## Usage
+## 📊 **Key Features**
 
-1. **Upload Data**: Go to "Data Upload" tab and upload CSV files
-2. **View Data**: Check "Data Grid" tab to see and edit your data
-3. **Create Rules**: Use "Rules" tab to build business rules
-4. **Set Priorities**: Configure weights in "Priorities" tab
-5. **Export**: Download clean data from "Export" tab
+### **AI-Powered Data Processing**
+- **Smart Column Mapping**: Handles misnamed or reordered columns
+- **Intelligent Validation**: 12+ validation rules with contextual feedback
+- **Error Correction**: AI suggests and applies data quality fixes
+- **Natural Language Search**: Query data using plain English
 
-## Sample Data
+### **Business Rules Engine**
+- **6 Rule Types**: Co-run, slot restriction, load limit, phase window, pattern match, precedence
+- **Visual Rule Builder**: Intuitive drag-and-drop interface
+- **AI Rule Generation**: Convert natural language to structured rules
+- **Rule Management**: Enable/disable, edit, delete rules
 
-Use the provided sample files in `/samples/`:
-- `clients.csv` - Client data with priorities
-- `workers.csv` - Worker skills and availability  
-- `tasks.csv` - Task requirements
+### **Advanced Validation System**
+1. **Missing Required Fields** - Detects empty critical data
+2. **Duplicate IDs** - Finds duplicate identifiers
+3. **Malformed Data** - Validates arrays, JSON, data types
+4. **Range Validation** - Ensures values within acceptable ranges
+5. **Cross-References** - Validates relationships between entities
+6. **Skill Coverage** - Ensures required skills are available
+7. **Capacity Checks** - Prevents worker overload
+8. **JSON Validation** - Detects malformed JSON vs plain text
+9. **Invalid References** - Catches non-existent task IDs (TX, T99, etc.)
+10. **Phase Validation** - Validates phase number ranges
+11. **Load Distribution** - Checks worker capacity vs assignments
+12. **Pattern Recognition** - AI-powered anomaly detection
 
-## Tech Stack
+### **Prioritization & Export**
+- **Weight Configuration**: Slider-based priority adjustment
+- **Preset Profiles**: Quick configuration templates
+- **Clean Data Export**: Validated CSV files
+- **Rules Configuration**: Structured JSON export
+- **Progress Tracking**: Real-time export progress
 
-- Next.js 14
-- TypeScript
-- Tailwind CSS
-- shadcn/ui
+## 🧪 **Testing the Application**
 
-## Deployment
+### **Complete Workflow Test**
+1. **Upload Data**: Use sample CSV files from `/samples/`
+2. **Review Validation**: Check validation summary for detected issues
+3. **Edit Data**: Try inline editing in the data grid
+4. **Search Data**: Use natural language queries
+5. **Create Rules**: Build rules manually or with AI
+6. **Set Priorities**: Configure weight distribution
+7. **Export Package**: Download clean data and rules
 
+### **AI Features Test**
+- **Error Correction**: Generate AI suggestions for data quality issues
+- **Natural Language Search**: Try queries like "High priority clients"
+- **Rule Generation**: Convert plain English to structured rules
+- **Smart Validation**: See contextual error messages and suggestions
+
+## 📁 **Project Structure**
+\`\`\`
+data-alchemist/
+├── app/                    # Next.js app directory
+├── components/            # React components
+│   ├── data-ingestion.tsx
+│   ├── data-grid.tsx
+│   ├── rule-builder.tsx
+│   ├── prioritization-panel.tsx
+│   └── ai-error-correction.tsx
+├── contexts/              # React context providers
+├── lib/                   # Utility functions
+│   ├── file-parser.ts
+│   └── validators.ts
+├── samples/               # Sample data files
+│   ├── clients.csv
+│   ├── workers.csv
+│   └── tasks.csv
+└── README.md
+\`\`\`
+
+## 🎯 **Assignment Requirements Met**
+
+| Requirement | Status | Implementation |
+|-------------|--------|----------------|
+| **Data Ingestion** | ✅ | CSV/XLSX upload with AI parsing |
+| **Validation (12+)** | ✅ | Comprehensive validation suite |
+| **Inline Editing** | ✅ | Real-time editable data grid |
+| **Natural Language Search** | ✅ | AI-powered query processing |
+| **Rule Builder UI** | ✅ | 6 rule types with intuitive interface |
+| **AI Rule Generation** | ✅ | Natural language to rules conversion |
+| **Prioritization** | ✅ | Weight-based configuration system |
+| **Export Functionality** | ✅ | Clean data + rules.json export |
+| **AI Error Correction** | ✅ | Smart suggestions with auto-fix |
+| **TypeScript** | ✅ | Fully typed codebase |
+| **Sample Data** | ✅ | Realistic data with edge cases |
+
+## 🌟 **X-Factor Features**
+
+### **AI Error Correction Engine**
+- Automatically detects data quality issues
+- Provides actionable fix suggestions with confidence scores
+- One-click auto-fix for common problems
+- Pattern recognition for optimization opportunities
+
+### **Natural Language Processing**
+- Search data using plain English queries
+- Convert natural language to structured business rules
+- Contextual understanding of data relationships
+- Smart query suggestions and examples
+
+### **Advanced Validation Intelligence**
+- Goes beyond basic field validation
+- Cross-reference validation between entities
+- Skill-coverage matrix analysis
+- Capacity and load distribution checks
+
+## 🚀 **Deployment**
+
+### **Vercel Deployment**
 \`\`\`bash
+# Deploy to Vercel
 npm run build
 vercel --prod
 \`\`\`
 
-## Assignment Completion
+## 🤝 **Contact**
+- **Name**: Harsh Tripathi
+- **Email**: tripathiharsh884@gmail.com
+- **Phone**: +918840997224
+- **Graduation Year**: 2026
 
-✅ All milestones completed (Milestone 1, 2, and 3)  
-✅ 12+ validation rules implemented  
-✅ AI-powered features throughout  
-✅ Responsive design for all devices
+---
+
+**Built with ❤️ for Digitalyz Software Engineering Intern Assignment**
